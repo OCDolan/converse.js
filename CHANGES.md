@@ -16,6 +16,7 @@
 - Fix: refresh the MUC sidebar when participants collection is sorted
 - Fix: room information not correctly refreshed when modifications are made by other users
 - Fix: prevent busy-loop when session resumption fails
+- #1349: New config option [colorize_username](https://conversejs.org/docs/html/configuration.html#colorize_username)
 
 ### Breaking changes:
 
