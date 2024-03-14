@@ -308,7 +308,7 @@ export class RichText extends String {
          *  add TemplateResult objects meant to render rich parts of the message.
          * @example _converse.api.listen.on('beforeMessageBodyTransformed', (view, text) => { ... });
          */
-        await api.trigger('beforeMessageBodyTransformed', this, { 'Synchronous': true });
+        await api.trigger('beforeMessageBodyTransformed', this, { 'synchronous': true });
 
         this.render_styling && this.addStyling();
         this.addAnnotations(this.addMentions);
@@ -327,7 +327,7 @@ export class RichText extends String {
          *  add TemplateResult objects meant to render rich parts of the message.
          * @example _converse.api.listen.on('afterMessageBodyTransformed', (view, text) => { ... });
          */
-        await api.trigger('afterMessageBodyTransformed', this, { 'Synchronous': true });
+        await api.trigger('afterMessageBodyTransformed', this, { 'synchronous': true });
 
         this.payload = this.marshall();
         this.options.show_me_message && this.trimMeMessage();

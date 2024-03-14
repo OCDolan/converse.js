@@ -57,7 +57,7 @@ class Message extends ModelWithContact {
          * @type {Message}
          * @example _converse.api.listen.on('messageInitialized', model => { ... });
          */
-        await api.trigger('messageInitialized', this, { 'Synchronous': true });
+        await api.trigger('messageInitialized', this, { 'synchronous': true });
         this.initialized.resolve();
     }
 
